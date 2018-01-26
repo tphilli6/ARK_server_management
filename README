@@ -1,0 +1,23 @@
+A collection of file and scripts used for managing an ARK server. Note this just emails a list of recipients if the server IP address changes since I'm not using a DNS name.
+
+
+General instructions
+-install msmpt
+-configuration file ~/.msmtprc
+
+account gmail
+auth on
+host smtp.gmail.com
+port 587
+auth on
+tls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+from name@gmail.com
+user name@gmail.com
+password pw
+
+account default : gmail
+
+-may need to update certificates
+sudo apt-get install ca-certificates
+sudo update-ca-certificates
